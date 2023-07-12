@@ -3,7 +3,61 @@ entries:
   observability-architecture:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-12T16:21:47.371332301+01:00"
+    created: "2023-07-12T21:20:10.05224683+01:00"
+    dependencies:
+    - alias: elastic-jg-stk
+      condition: elastic-jg-stk.enabled
+      name: eck-stack
+      repository: https://helm.elastic.co
+      version: 0.6.0
+    - alias: jaeger-stack
+      condition: jaeger-stack.enabled
+      name: jaeger
+      repository: https://jaegertracing.github.io/helm-charts
+      version: 0.71.7
+    - alias: otlp-independent-collector
+      condition: otlp-independent-collector.enabled
+      name: opentelemetry-collector
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.62.0
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.57.4
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.8.1
+    - alias: elastic-eck-stk
+      condition: elastic-eck-stk.enabled
+      name: eck-stack
+      repository: https://helm.elastic.co
+      version: 0.6.0
+    description: Observability Architecture
+    digest: 6814074a10eb8f693db04ade7bd80128d78ef7c24ba7d5fc425051f5c81abb98
+    home: https://github.com/ffortefct/observability
+    keywords:
+    - architecture
+    - observability
+    - elasticsearch
+    - jaeger
+    - opentelemetry
+    - kibana
+    - grafana
+    kubeVersion: '>=1.24.0-1.27.0'
+    maintainers:
+    - email: f.forte@campus.fct.unl.pt
+      name: ffortefct
+    name: observability-architecture
+    sources:
+    - https://github.com/ffortefct/observability
+    type: application
+    urls:
+    - https://ffortefct.github.io/observability-helm-charts/observability-architecture-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-07-12T21:20:10.022884788+01:00"
     dependencies:
     - alias: elastic-jg-stk
       name: eck-stack
@@ -54,4 +108,4 @@ entries:
     urls:
     - https://ffortefct.github.io/observability-helm-charts/observability-architecture-1.0.1.tgz
     version: 1.0.1
-generated: "2023-07-12T16:21:47.344014259+01:00"
+generated: "2023-07-12T21:20:10.00080583+01:00"
