@@ -1,0 +1,3 @@
+[submodule "charts/observability-architecture"]
+	path = charts/observability-architecture
+	url = https://github.com/ffortefct/observability
