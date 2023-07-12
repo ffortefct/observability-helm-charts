@@ -3,7 +3,7 @@ entries:
   observability-architecture:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-12T12:56:38.645057218+01:00"
+    created: "2023-07-12T16:21:47.371332301+01:00"
     dependencies:
     - alias: elastic-jg-stk
       name: eck-stack
@@ -33,7 +33,7 @@ entries:
       repository: https://helm.elastic.co
       version: 0.6.0
     description: Observability Architecture
-    digest: e24df29722ede8393115305aff34ed62c2d1c34501091dff7dd065dfe87fe6f2
+    digest: ef5b2c48876cd7db4b98b2e73492d292ac335f2ebedda47ba989c57d515b71ee
     home: https://github.com/ffortefct/observability
     keywords:
     - architecture
@@ -52,6 +52,6 @@ entries:
     - https://github.com/ffortefct/observability
     type: application
     urls:
-    - https://ffortefct.github.io/observability-helm-charts/observability-architecture-1.0.0.tgz
-    version: 1.0.0
-generated: "2023-07-12T12:56:38.622691898+01:00"
+    - https://ffortefct.github.io/observability-helm-charts/observability-architecture-1.0.1.tgz
+    version: 1.0.1
+generated: "2023-07-12T16:21:47.344014259+01:00"
